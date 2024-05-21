@@ -1,0 +1,218 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    
+    text-decoration: none;
+}
+.main-container{
+    background: url(images/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+    color: rgb(252, 251, 251);
+}
+.header #logo{
+    width: 50%;
+}
+
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    background: rgb(80, 79, 79);
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+.Login  {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: #fffefe;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Login a:hover  {
+    background: #8d8d8d;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
+.containerLogin{
+    position: absolute;
+    top: 6%;
+    left: 20%;
+    transform: translate(-12%, 16%);
+    width: 85%;
+    height: 530px;
+    background: url(images/background4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+
+.contentLogin h2{
+    color: rgb(218, 233, 49);
+}
+
+.containerLogin  .contentLogin  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /*blur */
+    height: 100%;
+    color: rgb(251, 246, 246);
+    backdrop-filter: blur(3px);  
+}
+
+.contentLogin h2  {
+    text-align: center;
+    font-size: 24px;
+    margin-top:  2rem;
+    padding-bottom: 10px;
+}
+
+.contentLogin hr{
+    margin-left: auto;
+     margin-right: auto;
+    width: 80%;
+   
+ 
+
+    
+}
+.StaffLogin{
+    backdrop-filter: blur(0px);
+    position: absolute;
+}
+
+.StaffLogin .DriverLogin  {
+    transform: translate(410px,-542px);
+    
+}
+
+.StaffLogin .CustomerServiceLogin  {
+    transform: translate(800px,-1083.5px);
+    
+}
+
+.StaffLogin .CustomerServiceLogin h2{
+    margin-left: 80px;
+}
+
+.StaffLogin .profile    {
+    backdrop-filter: blur(0px);
+    margin-top: 2rem;
+    margin-left: 12rem;
+}
+
+.StaffLogin h2{
+    backdrop-filter: blur(0px);
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 12rem;
+    margin-left: 14rem;
+}
+
+ .input-box  {
+    backdrop-filter: blur(0px);
+    color: antiquewhite;
+    font-size: 19px;
+    width: 340px;
+    height: 53px;
+    border-bottom: 2px solid white;
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+    padding-bottom: 10px;
+    background: transparent;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: rgb(255, 255, 81);
+    
+}
+
+.Logins .StaffLogin .DriverLogin .h2   {
+    margin-left: 10rem;
+}
+
+.submitAdmin    {
+    margin-left: 7.5rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    font-size: large;
+    padding: 3.5px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    background: blue;
+    color: #fffefe;
+}
+
+.submitDriver   {
+    margin-left: 7.5rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    font-size: large;
+    padding: 3.5px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    background: blue;
+    color: #fffefe;
+}
+
+.submitCCO  {
+    margin-left: 7.5rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    font-size: large;
+    padding: 3.5px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    background: blue;
+    color: #fffefe;
+}
+
+a{
+    color: yellow;
+}
+
+footer  {
+    background-color: #545454;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+#footer-content {
+    color: #ece6e6;
+}

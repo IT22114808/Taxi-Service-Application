@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta name="viewport" content="width=device-width, initial = 1.0">
+        <link rel="stylesheet" href="Payment01.css">
+        <script src="script.js"></script>  
+    </head>
+
+    <body>
+        <div class="main-container">
+            <header class="header">
+                <a href="#" id="logo"><img src="images/yellow-logo.jpg" alt="" width="15%" height="15%" ></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="review.php">Reviews</a>
+                    <a href="index.html #About">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+                <nav class="Login">
+                    <a href="Login.html"> Sign In </a>
+                    /
+                    <a href="Sign up.html"> Sign Up </a>
+                </nav>
+                
+            </header>
+        </div>
+    
+        <div class="drivertable">
+            <div class="driverInterface">
+                <h2> Make your payment here.. </h2>
+                <!--Popup screen-->
+                <div class="popup centre">
+                    <div class="title">
+                        Pay here..
+                    </div>
+                    <div class="description">
+                        <p>
+                            <label> Cardholder Name :  </label>
+                            <input type="text" placeholder="Name as in Card">
+                            <br>
+                            <label> Bank </label>
+                            <select id="dropdown">
+                                <option disabled selected value="">Bank the card belongs</option>
+                                <option value="option1"> Bank of Ceylon </option>
+                                <option value="option2"> Peoples Bank </option>
+                                <option value="option3"> Sampath Bank </option>
+                                <option value="option3"> HNB </option>
+                                <option value="option3"> Commercial Bank </option>
+                                <option value="option3"> HDFC </option>
+                                <option value="option3"> DFCC </option>
+                                <option value="option3"> HSBC </option>
+                            </select>
+                            <br>
+                            <label> CVV </label>
+                            <input type="text" placeholder="3-digit Number">
+                            <br>
+                            <label> Amount : </label>
+                            <input type="number" min="0" placeholder="total amount">
+                            <br>
+                            <label>Card Type : </label>
+                            <select id="dropdown">
+                                <option disabled selected value="">Card Type</option>
+                                <option value="option1"> VISA </option>
+                                <option value="option2"> Master Card </option>
+                                <option value="option3"> AMEX </option>
+                                <option value="option3"> DISCOVER </option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="actionButtons">
+
+                        <div class="Confirm-btn">
+                            <button id="Confirm-popup-btn">
+                                Confirm
+                            </button>
+                        </div>
+
+
+                        <div class="dismiss-btn">
+                            <button id="dismiss-popup-btn">
+                                Dismiss
+                            </button>
+                        </div>
+                    </div>  
+
+                </div>
+                <div class="center">
+                    <input type="radio" class="payment_selector" id="open-popup-btn" name="payment-method">
+                    <label for="card-payment">Card Payment</label>
+                    
+                    <input type="radio" class="payment_selector" id="cash-payment" name="payment-method">
+                    <label for="cash-payment">Cash Payment</label>  
+
+                    
+                </div>
+                <div class="popup" id="cash-popup">
+                    <h2 class="title">Cash Payment</h2>
+                    <p class="description">Please have the exact change ready.</p>
+                    <div class="confirm-btn">
+                        <button id="cash-confirm-btn">Confirm</button>
+                    </div>
+                    <div class="dismiss-btn">
+                        <button id="cash-dismiss-btn">Dismiss</button>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="footer-content">
+            <p>&copy; 2023 Your Taxi Company. All rights reserved.</p>
+        </div>
+
+        <p>Copyright &copy; <span id="curYear"></span> AllWay Transport Service</p>
+        <p>Powered By : <a rel="nofollow noopener" href="#"><em>AllWay Transport Service.lk</em></a></p>
+
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById('curYear').innerHTML = year;
+    </script>
+
+    </body>
+</html>    

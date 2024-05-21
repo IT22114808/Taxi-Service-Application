@@ -1,0 +1,251 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    
+    text-decoration: none;
+}
+.main-container{
+    background: url(images/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+    color: rgb(252, 251, 251);
+}
+.header #logo{
+    width: 50%;
+}
+
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    background: rgb(80, 79, 79);
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+.Login  {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: #fffefe;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Login a:hover  {
+    background: #eeeaea;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
+.containerLogin{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-15%, -6%);
+    width: 85%;
+    height: 580px;
+    background: url(images/background4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.containerLogin  .contentLogin  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /*blur */
+    height: 100%;
+    color: rgb(251, 246, 246);
+    backdrop-filter: blur(3px);  
+}
+
+/*transparent part*/
+.ContactUsOutline  {
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    left: 26%;
+    width: 70%;   
+    height: 100%;
+    background: rgba(10, 10, 10, 0.778);
+    padding: 15px;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 15px;
+    transform: translate(-15%);
+    
+}
+
+.contentLogin h2{
+    backdrop-filter: blur(0px);
+    font-size: 32px;
+    padding: 10px;
+}
+
+.contentLogin h3{
+    backdrop-filter: blur(0px);
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+}
+
+.ContactUsLeft01  {
+    width: 50%;
+    align-items: left;
+    justify-content: center;
+}
+
+.brief01    {
+    width: 50%;
+    align-items: left;
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.brief02    {
+    width: 50%;
+    text-align: right;
+    transform: translate(65%, -130%);
+    margin-left: 2.5rem;
+    
+}
+
+.ContactUsLeft02  {
+    width: 50%;
+    align-items: left;
+    justify-content: center;
+    margin-top: -13%;
+}
+
+.ContactUsLeft02 h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.phone-number   {
+    margin-left: 12%;
+    margin-top: -6%;
+    font-size: 18px;
+}
+
+.phone  {
+    margin-left: 12px;
+}
+
+.Message    {
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+.MessageMail    {
+    font-size: 18px;
+    margin-left: 12%;
+    margin-top: -6%;
+}
+
+.verticle-line  {
+    width: 2px;
+    height: 400px;
+    background-color: white;
+    margin-left: 40rem;
+    margin-top: -35rem;
+}
+
+.ContactUsRight {
+    width: 50%;
+    align-items: right; 
+    transform: translate(105%, -38rem);
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* contact Us Form */
+
+.ContactUsForm {
+    width: 300px;
+  }
+  
+  .ContactUsForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .ContactUsForm input[type="text"],
+  .ContactUsForm input[type="tel"],
+  .ContactUsForm input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .ContactUsForm input[type="text"],
+  .ContactUsForm input[type="tel"],
+  .ContactUsForm input[type="email"],
+  .ContactUsForm input[type="text"]::placeholder,
+  .ContactUsForm input[type="tel"]::placeholder,
+  .ContactUsForm input[type="email"]::placeholder {
+    color: #555;
+  }
+  
+  .ContactUsForm input[type="text"]:focus,
+  .ContactUsForm input[type="tel"]:focus,
+  .ContactUsForm input[type="email"]:focus {
+    border-color: #4285f4;
+  }
+  
+  .submitComment    {
+    font-size: 18px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #4285f4;
+    border-width: 2.5px;
+    border-radius: 8px;
+  }
+
+  /*footer */
+  footer  {
+    background-color: #545454;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+#footer-content {
+    color: #ece6e6;
+}
+  
+  

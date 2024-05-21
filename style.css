@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main-container{
+    background: url(images/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+}
+.header #logo{
+    width: 50%;
+}
+
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    background: rgb(115, 119, 120);
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
+
+.Login a  {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #adbd03;
+    text-decoration: none;
+    cursor: pointer;
+    transform: translateX(-250px);
+}
+
+.Login a:hover  {
+    background: #fffcfc;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+
+
+.navbar.active{
+    top: 10%;
+}
+
+.header{
+    padding: 2rem;
+}
+
+.background-text h2{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.background-text h2:hover{
+    color: rgb(255, 234, 1);
+    background: rgb(216, 203, 203);
+    border-radius: 15px;
+    padding: .5rem;
+    
+}
+
+.taxi-image{
+    width: 35%;
+    margin: 0 auto;
+}
+
+.taxi-image img{
+    width: 100%;
+    margin-top: 320px;
+
+}
+
+.home-container{
+    background: rgb(81, 80, 80);
+    padding: 2rem 7%;
+    width: 100%;
+}
+
+.home-content{
+    padding-top: 9rem 4r; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;  
+}
+
+.inner-content{
+    flex: 1 1 45rem;
+    
+}
+.inner-content h3{
+    font-size: 30px;
+}
+.inner-content h2{
+    font-size: 48px;
+    padding-bottom: 1rem;
+}
+.inner-content p{
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 3rem;
+}
+.inner-content .booknow{
+    background: yellow;
+    padding: 1rem ;
+    color: rgb(18, 17, 16);
+    font-size: 3.5rem;
+    border-radius: 8px;
+}
+.inner-content .booknow:hover{
+    color: rgb(137, 132, 2);
+    background: rgb(211, 202, 96);
+    border-radius: 10px;
+
+}
+.form-heading{
+    text-align: center;
+    background: black;
+    padding: 1.5rem;
+
+}
+.form-heading h1{
+    color: white;
+}
+
+.contact-form{
+   width: 45rem;
+   background: white;
+   text-align: center;
+   padding: 2rem 1rem; 
+   border-radius: 25px;
+   margin: 0 auto;  
+}
+
+.form-fields input{
+    padding: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+.contact-form a{
+    background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 2rem ;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.submit{
+    padding-top: 2rem;
+    
+}
+.main-tariff{
+    padding: 3rem 7%;
+    height: 100vh;
+}
+.main-tariff h1{
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+
+
+.main-tariff span{
+    color: rgb(171, 173, 26);
+}
+
+.inner-tarrif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tarrif-container{
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.tarrif-container img{
+   width: 60%;
+   margin-top: -50px;
+   
+}
+
+.tarrif-container .inner-box h2{
+    font-size: 30px;
+}
+
+.tarrif-container .inner-box p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.tarrif-container .inner-box h3{
+    color: rgb(21, 0, 255);
+    font-size: 2rem;
+
+}
+
+.tarrif-container .inner-box a{
+    font-size: 1.5rem;
+    padding: 1rem 3rem ;
+}
+
+.tarrif-container:nth-child(2){
+    background-color: rgb(233, 192, 45);
+}
+
+.heading-yellow{
+    color: black;   
+}
+
+.tarrif-container a{
+    color: rgb(255, 255, 255);
+    padding :1rem 3rem;
+    background: black;
+    display: inline-block;
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+.fast-booking   {
+    background: url(images/secbg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.fast-booking .fast-hading  {
+    color: yellow;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.fast-booking h2{
+    font-size: 31px;
+    color: white;
+    text-align: center;
+}
+
+.inner-fast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 7%;
+}
+
+.booking-content{
+    flex: 1 1 45rem;
+    text-align: justify;
+    
+}
+
+.booking-content    {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.inner-fast-text h1{
+    font-size: 22px;
+    color: yellow;
+    padding: 2rem;
+}
+
+.inner-fast-text p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.icon-fast{
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    text-align: center;
+}
+
+.icon-fast span i{
+    line-height: 50px;
+    font-size: 1.5rem;
+} 
+
+.testimonials   {
+    background: url(images/testimonial\ back.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.testimonials .heading-test{
+    color: yellow;
+    font-size: 38px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 7%;
+}
+
+.inner-test{
+    flex: 1 1 45rem;
+    color: white;
+    background: black;
+    padding: 2rem;
+}
+
+.inner-test p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.clients{
+    display: flex;
+    align-items: center;
+}
+
+.clients h1{
+    color: yellow;
+    margin-left: 2rem;
+}
+
+footer  {
+    background-color: #545454;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+#footer-content {
+    color: #ece6e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    html{
+       font-size: 50%; 
+    }
+    #menu-bars{
+        display: initial;
+    }
+    .navbar{
+       position: relative;
+       top: 10%;
+       left: 0; 
+       width: 100%;
+       
+    }
+    .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+        
+     }
+
+     .background-text{
+        width: 100%;
+        padding: 0;
+     }
+}
+
+.LoginBody  {
+    color: #545454;
+}
+
+
+#dropdown   {
+    padding: 15px;
+    border: none;
+    padding-right: 10px;
+}
+

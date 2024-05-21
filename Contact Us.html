@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial = 1.0">
+        <link rel="stylesheet" href="Contact Us.css">
+        
+    </head>
+
+    <body>
+        
+        <div class="main-container">
+            <header class="header">
+                <a href="#" id="logo"><img src="images/yellow-logo.jpg" alt="" width="18%" height="20%" ></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="review.php">Reviews</a>
+                    <a href="index.html #About">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+                <nav class="Login">
+                    <a href="Login.html">Sign In</a>
+                    /
+                    <a href="Sign up.html">Sign Up</a>
+                </nav>
+                
+            </header>
+        </div>
+
+        <div class="containerLogin">
+            <div class="contentLogin">
+                <div class="ContactUsOutline">
+                    <h2> Contact Us...</h2>
+                    <hr>
+                    <h3> AllWay Transport Customer service </h3>
+                    <div class="ContactUsLeft01">
+                        <div class="brief01">
+                            <p class="briefPara">
+                                Reach us for any of the following problem. We respond you for any issue.
+                                Looking for any safe transport service, You are at the right place. We take your responsibility until you reach to 
+                                your destination  
+                            </p>
+                        </div>
+
+                        <div class="brief02">
+                            <img src="images/yellow-logo.jpg" height="65%" width="65%" class="briefimg" alt="Logo">
+                        </div>
+                    </div>
+                    
+                    <div class="ContactUsLeft02">
+                        <h4> Find Us..</h4>
+                        <div class="brief03">
+                            <img src="images/phone.png" width="6%" height="6%" alt="phone" class="phone">
+                            <p class="phone-number"> +94 114 587 898</p>
+
+                            <img src="images/message02.png" width="6%" height="6%" alt="Message" class="Message">
+                            <p class="MessageMail"> allway.transport.lk</p>
+                        </div>
+                        <div class="verticle-line"></div>
+                    </div>
+
+                    <div  class="ContactUsRight">
+                        <form action="includes/Contact Us.php" method="post" class="ContactUsForm" >
+                            <label> Enter your Name :- </label>
+                            <input type="text"  placeholder="Full Name" class="Name">
+                            <br>
+
+                            <label> Your mobile number :-</label>
+                            <input type="tel" placeholder="+94" class="telephone">
+                            <br>
+                            
+                            <label> Enter your E-mail :-</label>
+                            <input type="email" name="email" placeholder="Email Address" class="EmailAddress">
+                            <br>
+
+                            <label> Your massage here :-</label>
+                            <input type="text" name="msg" placeholder="Type here" class="comment">
+                            <br>
+
+                            <input type="submit" value="Submit" class="submitComment">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-content">
+                <p>&copy; 2023 Your Taxi Company. All rights reserved.</p>
+            </div>
+    
+            <p>Copyright &copy; <span id="curYear"></span> AllWay Transport Service</p>
+            <p>Powered By : <a rel="nofollow noopener" href="#"><em>AllWay Transport Service.lk</em></a></p>
+    
+        </footer>
+        <script src="script.js"></script>
+    
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('curYear').innerHTML = year;
+        </script>
+    </body>
+</html>

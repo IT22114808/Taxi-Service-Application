@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial = 1.0">
+        <link rel="stylesheet" href="Login.css">
+        
+        <!--why the below line is used?-->
+        
+    </head>
+
+    <body>
+        <div class="main-container">
+            
+            <header class="header">
+                <a href="#" id="logo"><img src="images/yellow-logo.jpg" alt="" width="25%" height="25%" ></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+                <nav class="Login">
+                    <a href="Login.html">Sign In</a>
+                    /
+                    <a href="Sign up.html">Sign Up</a>
+                </nav>
+                
+            </header>
+
+            <div class="containerLogin">
+                <div class="contentLogin">
+                    
+
+                    <div class="text-sci">
+                        <h2>Welcome!<br> AllWay<span>  Transport Service.</span></h2>
+
+                        <p>
+                            Sign In and enjoy our rides and meet up with your destination. We are with you to enhance your taxi experience
+                        </p>
+                    </div>
+                    
+                    
+
+
+                </div>
+                <div class="logreg-box">
+                    <div class="form-box login">
+                        <form action="includes/login.inc.php" method="post">
+                            <h2>Sign In</h2>
+                            <br>
+                            <div class="input-box">
+                                <p class="Customer_Login">Customer Login</p>
+                                <input type="email" name="username" required placeholder="Enter your email">
+                                <label>Email</label>
+
+                                <input type="password" name = "password" required placeholder="8-digit password">
+                                <label>Password</label>
+                            </div>
+    
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Remember me!</label>
+                                <br>
+                                <a href="#"> Forgot Password</a>
+                            </div>
+    
+                            <button type="submit" class="signbutton">Sign-In</button>
+    
+                            <div class="login-register">
+                                <p>Don't have an account?
+                                    <a href="Sign up.html" class="register-Link">Sign up</a>
+                                </p>
+                            </div>
+                            <br>
+                            
+                            <div class="LoginStaff">
+                                    <label> Staff Login</label>
+                                    <a href="StaffLogin.html" class="btn2">Sign In</a>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+        <footer>
+            <div id="footer-content">
+                <p>&copy; 2023 Your Taxi Company. All rights reserved.</p>
+            </div>
+    
+            <p>Copyright &copy; <span id="curYear"></span> AllWay Transport Service</p>
+            <p>Powered By : <a rel="nofollow noopener" href="#"><em>AllWay Transport Service.lk</em></a></p>
+    
+        </footer>
+        <script src="script.js"></script>
+    
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('curYear').innerHTML = year;
+        </script>
+        
+
+
+    </body>
+</html>

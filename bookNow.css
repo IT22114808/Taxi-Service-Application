@@ -1,0 +1,183 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    
+    text-decoration: none;
+}
+.main-container{
+    background: url(images/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+    color: rgb(252, 251, 251);
+}
+.header #logo{
+    width: 50%;
+}
+
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    background: rgb(80, 79, 79);
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+.Login  {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: #fffefe;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Login a:hover  {
+    background: #eeeaea;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
+.containerLogin{
+    position: absolute;
+    top: 1.5%;
+    left: 28%;
+    transform: translate(-12%, 16%);
+    width: 60%;
+    height: 575px;
+    background: url(images/background4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+
+.containerLogin  .contentLogin  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /*blur */
+    height: 100%;
+    color: rgb(251, 246, 246);
+    backdrop-filter: blur(1.5px);  
+}
+
+/*transparent part*/
+.bookingDetailsOutline  {
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    left: 26%;
+    width: 50%;   
+    height: 100%;
+    background: rgba(57, 57, 58, 0.778);
+    padding: 15px;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+
+.bookingDetails {
+    font-size: 18px;
+    text-align: left;
+    
+    
+}
+
+.bookingDetails h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 0.7rem;
+    padding: 20px;
+}
+
+
+
+  .BookingForm {
+    width: 300px;
+  }
+  
+  .BookingForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .BookingForm select,
+  .BookingForm input[type="date"],
+  .BookingForm input[type="time"],
+  .BookingForm input[type="tel"],
+  .BookingForm input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #010101;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .BookingForm select {
+    height: 34px;
+  }
+  
+  .BookingForm input[type="date"],
+  .BookingForm input[type="tel"],
+  .BookingForm input[type="time"] {
+    height: 34px;
+  }
+  
+  .BookingForm input[type="number"] {
+    width: 60px;
+  }
+  
+  .bookingDetails .submit   {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 5px;
+    transform: translate(28rem, -5.5rem);
+    background: rgb(39, 98, 226);
+    color: rgb(253, 253, 253);
+    border-color: #010101;
+  }
+
+  /*footer */
+  footer  {
+    background-color: #545454;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+#footer-content {
+    color: #ece6e6;
+}
+  
+  
+  
+  
+  

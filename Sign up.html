@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta name="viewport" content="width=device-width, initial = 1.0">
+        <link rel="stylesheet" href="Login.css">
+        
+    </head>
+
+    <body>
+        <div class="main-container">
+            
+            <header class="header">
+                <a href="#" id="logo"><img src="images/yellow-logo.jpg" alt="" width="25%" height="25%" ></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="review.php">Reviews</a>
+                    <a href="index.html #About">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+                <nav class="Login">
+                    <a href="Login.html">Sign In</a>
+                    /
+                    <a href="Sign up.html">Sign Up</a>
+                </nav>
+                
+            </header>
+
+            <div class="containerLogin">
+                <div class="contentLogin">
+                    <h2>AllWay</h2>
+
+                    <div class="text-sci">
+                        <h2>Welcome! <br> <span>To Our New Website.</span></h2>
+
+                        <p>Register with our website and enjoy our rids for an affdoble price.</p>
+
+                       
+                    </div>
+                    
+                    
+
+
+                </div>
+                <div class="logreg-box">
+                    <div class="form-box login">
+                        <form action="includes/signup.inc.php" method="post">
+                            <h2>Register here..</h2>
+                            <br>
+                            <div class="input-box">
+                                <input type="text" name="first" placeholder="First Name" required>
+                                <label>First Name</label>
+
+                                <input type="text" name="last" placeholder="Last Name">
+                                <label>Last Name</label>
+
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <label>Email</label>
+
+                                <input type="date" name="dob">
+                                <label>Date of Birth</label>
+
+                                <input type="password" name="pw" placeholder="8-digit password" required>
+                                <label>Password</label>
+
+                                <input type="password" placeholder="re-enter password" required>
+                                <label>Confirm Password</label>
+                                <br>
+                                <input type="submit" class="registerNow" value="Register Now">
+                            </div>  
+                        </form>
+
+                        <p>By clicking the Register butoon, you are agree to our 
+                        <a href="#"> Terms and condition</a> and <a href="#">Policy Privacy</a>
+                        </p>
+                        <BR>
+                        <p class="p1">Already have an account? <a href="Login.html"> Login here</a></p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+        
+        <footer>
+            <div id="footer-content">
+                <p>&copy; 2023 Your Taxi Company. All rights reserved.</p>
+            </div>
+    
+            <p>Copyright &copy; <span id="curYear"></span> AllWay Transport Service</p>
+            <p>Powered By : <a rel="nofollow noopener" href="#"><em>AllWay Transport Service.lk</em></a></p>
+    
+        </footer>
+        <script src="script.js"></script>
+    
+        <script>
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('curYear').innerHTML = year;
+        </script>
+
+    </body>
+</html>

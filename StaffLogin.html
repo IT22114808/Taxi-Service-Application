@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial = 1.0">
+        <link rel="stylesheet" href="StaffLogin.css">
+        <script src="script.js"></script>
+</head>
+        
+        
+    </head>
+
+    <body>
+        <div class="main-container">
+            
+            <header class="header">
+                <a href="#" id="logo"><img src="images/yellow-logo.jpg" alt="" width="22%" height="22%" ></a>
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="review.php">Reviews</a>
+                    <a href="index.html #About">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+                </nav>
+                <nav class="Login">
+                    <a href="Login.html">Sign In</a>
+                    /
+                    <a href="Sign up.html">Sign Up</a>
+                </nav>
+                <div class="icons">
+                <a href="#" id="menu-bars" class="fas fa-bars"><i class="fa fa-bars" aria-hidden="false"></i></a>
+                </div>
+            </header>
+
+
+            <div class="containerLogin">
+                <div class="contentLogin">
+                    <h2>AllWay Staff Login</h2>
+                    <hr>
+                </div>
+                
+                <div class="Logins">
+                    
+                    <div class="StaffLogin">
+                        
+                        <h2>Admin Login</h2>
+                        <div class="AdminLogin">
+                            <img src="images/blank_profile.png" class="profile" width="15%" height="15%">
+                            <form action="includes/driverlogin.inc.php" method="POST">
+                            <div class="input-box">
+                                <label>Email : </label>
+                                <input type="email" name="username" required placeholder="Enter your email">
+                        </div>        
+                                <br>
+                        <div class="input-box">
+                                <label>Password :</label>
+                                <input type="password" name = "password" required placeholder="8-digit password">
+                        </div>
+                        <button type="submit" class="submitCCO" href="includes/driverlogin.inc.php">Sign-In</button>
+                      
+                      </form>
+                        </div>
+                    
+                    <div class="StaffLogin">
+                        
+                        <div class="DriverLogin">
+                            <h2>Driver Login</h2>
+                            <img src="images/blank_profile.png" class="profile" width="15%" height="15%">
+                            <form action="includes/driverlogin.inc.php" method="POST">
+                            <div class="input-box">
+                                <label>Email : </label>
+                                <input type="email" name="username" required placeholder="Enter your email">
+                        </div>        
+                                <br>
+                        <div class="input-box">
+                                <label>Password :</label>
+                                <input type="password" name = "password" required placeholder="8-digit password">
+                        </div>
+                        <button type="submit" class="submitCCO" href="includes/driverlogin.inc.php">Sign-In</button>
+                       
+                        </form>
+                    </div>
+                    <div class="StaffLogin">
+                        
+                        <div class="CustomerServiceLogin">
+                            <h2>Customer Service Login</h2>
+                            <img src="images/blank_profile.png" class="profile" width="15%" height="15%">
+                            <form action="includes/cclogin.inc.php" method="POST">
+                            <div class="input-box">
+                                <label>Email : </label>
+                                <input type="email" name="username" required placeholder="Enter your email">
+                        </div>        
+                                <br>
+                        <div class="input-box">
+                                <label>Password :</label>
+                                <input type="password" name = "password" required placeholder="8-digit password">
+                        </div>
+                        <button type="submit" class="submitCCO" href="includes/cclogin.inc.php">Sign-In</button>
+                      
+                    </form>
+                    </div>
+                    
+                </div>
+                
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <footer>
+                <div id="footer-content">
+                    <p>&copy; 2023 Your Taxi Company. All rights reserved.</p>
+                </div>
+        
+                <p>Copyright &copy; <span id="curYear"></span> AllWay Transport Service</p>
+                <p>Powered By : <a rel="nofollow noopener" href="#"><em>AllWay Transport Service.lk</em></a></p>
+        
+            </footer>
+            <script src="script.js"></script>
+        
+            <script>
+                var date = new Date();
+                var year = date.getFullYear();
+                document.getElementById('curYear').innerHTML = year;
+            </script>
+
+            
+    </body>
+</html>
